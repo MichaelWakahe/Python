@@ -1,7 +1,7 @@
 """Test for expected exceptions from using the API wrong."""
 
 import pytest
-import tasks
+from ...src import tasks
 
 
 def test_add_raises():

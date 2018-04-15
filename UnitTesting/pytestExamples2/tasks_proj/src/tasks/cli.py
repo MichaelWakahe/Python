@@ -2,9 +2,9 @@
 
 from __future__ import print_function
 import click
-import tasks.config
+from .. import tasks
 from contextlib import contextmanager
-from tasks.api import Task
+from .api import Task
 
 
 # The main entry point for tasks.
