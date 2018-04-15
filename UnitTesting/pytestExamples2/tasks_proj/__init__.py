@@ -1,0 +1,2 @@
+"""Minimal Project Task Management."""
+

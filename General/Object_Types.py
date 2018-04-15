@@ -56,7 +56,7 @@ L[1] = 'c'  # Change it in place
 print ("''.join(L) is", ''.join(L))  # Join with empty delimiter - 'scrubbery'
 
 B = bytearray(b'spam')  # A bytes/list hybrid (ahead)
-B.extend(b'eggs')   # 'b' needed in 3.X, not 2.X
+B.extend(b'eggs')   # 'b' needed in 3.X, not 2.Xs
 print ("B is", B)   # B[i] = ord(c) works here too
 bytearray(b'spameggs')
 print ("B.decode() is", B.decode())  # Translate to normal string - 'spameggs'
