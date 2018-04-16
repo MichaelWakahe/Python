@@ -1,7 +1,7 @@
 """Test tasks.unique_id()."""
 
 import pytest
-import tasks
+from ...src import tasks
 
 
 def test_unique_id():

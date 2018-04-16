@@ -1,8 +1,8 @@
 """Test tasks.unique_id()."""
 
 import pytest
-import tasks
-from tasks import Task
+from ...src import tasks
+from ...src.tasks import Task
 
 
 @pytest.mark.skip(reason='misunderstood the API')
