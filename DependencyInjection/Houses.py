@@ -2,7 +2,8 @@ from com.example.DustCleaner import Duster
 from com.example.Cleaner import Cleaner
 
 """
-Our first house
+Our first house.
+Here we have tight coupling with a Cleaner type of object.
 """
 class House:
 
@@ -15,7 +16,9 @@ class House:
 
 
 """
-Our improved house
+Our improved house.
+It demonstrates Dependency Injection both at the constructor and at method level
+N.B. the __init__ method is strictly not a constructor.
 """
 class BetterHouse:
 
