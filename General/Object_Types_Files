@@ -1,0 +1,16 @@
+"""
+Python Object Types: Files
+
+Examples are tested in Python 3
+"""
+
+f = open('/tmp/data.txt', 'w')  # Make a new file in output mode ('w' is write)
+f.write('Hello\n')  # Write strings of characters to it
+f.write('world\n')
+f.close() # Close to flush output buffers to disk
+
+f = open('/tmp/data.txt')
+text = f.read()
+print("text is {}".format(text))
+
+for line in open('/tmp/data.txt'): print(line)
