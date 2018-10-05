@@ -1,7 +1,7 @@
 """
 Introducing Python Object Types
 
-Examples are tested in Python 3
+These are String examples, tested in Python 3
 """
 import math
 import random
@@ -65,6 +65,7 @@ print ("B.decode() is", B.decode())  # Translate to normal string - 'spameggs'
 #------------------------------------------------
 print ("\nStrings: Type-Specific Methods")
 S = 'Spam'
+print ("'p' in S? {}".format('p' in S))
 print ("S.find('pa') is", S.find('pa')) # Find the offset of a substring in S
 print ("S.replace('pa', 'XYZ') is", S.replace('pa', 'XYZ')) # Replace occurrences of a string in S with another
 print ("S is", S)  # S itself hasn't changed
@@ -78,3 +79,21 @@ line = 'aaa,bbb,ccccc,dd\n'
 print ("line.rstrip() is", line.rstrip())   # Remove whitespace characters on the right side
 print ("line.rstrip().split(',') is", line.rstrip().split(','))      # Combine two operations
 
+print ('{}, eggs, and {}'.format('spam', 'SPAM!'))
+
+print ('{:,.2f}'.format(296999.2567))   # Separators, decimal digits
+print ('%.2f | %+05d' % (3.14159, -42)) # Digits, padding, signs
+
+#------------------------------------------------
+print ("\nGetting Help:")
+print (dir(S))  # Getting help
+# On the REPL, you can type: help(S.replace)
+# Both 'dir' and 'help' also accept as arguments either a real object (like our string S) , or
+# the name of a data type (like str , list , and dict ).
+
+msg = """
+aaaaaaaaaaaaa
+bbb'''bbbbbbbbbb""bbbbbbb'bbbb
+cccccccccccccc
+"""
+print ("msg is {}".format(msg))
