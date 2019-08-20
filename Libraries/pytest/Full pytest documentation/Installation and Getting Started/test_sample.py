@@ -1,4 +1,3 @@
-
 """
 
 Test it on command line as follows:

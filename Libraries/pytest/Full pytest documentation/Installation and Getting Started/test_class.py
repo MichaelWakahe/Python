@@ -6,6 +6,8 @@ To execute it:
     pytest -q test_class.py
 
 """
+
+
 class TestClass(object):
     def test_one(self):
         x = "this"
