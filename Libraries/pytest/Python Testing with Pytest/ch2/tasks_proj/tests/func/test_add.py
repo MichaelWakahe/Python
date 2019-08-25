@@ -34,9 +34,11 @@ def test_added_task_has_id_set():
 def initialized_tasks_db(tmpdir):
     """Connect to db before testing, disconnect after."""
     # Setup : start db
+    print("At fixture start")
     tasks.start_tasks_db(str(tmpdir), 'tiny')
 
     yield  # this is where the testing happens
 
     # Teardown : stop db
+    print("At fixture end")
     tasks.stop_tasks_db()
