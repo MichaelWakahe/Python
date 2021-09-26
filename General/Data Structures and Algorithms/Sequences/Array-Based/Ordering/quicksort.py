@@ -5,6 +5,8 @@ Worst case runtime complexity: O(N^2)
 Average case runtime complexity: O(N Log N)
 Auxiliary Space: O(Log N)
 
+It is not a stable algorithm.
+
 Adapted from: Data Structures and Algorithms with Python text by Kent D. Lee and Steve Hubbard.
 Video illustration: https://www.youtube.com/watch?v=JS524MqKM0Q
 """
