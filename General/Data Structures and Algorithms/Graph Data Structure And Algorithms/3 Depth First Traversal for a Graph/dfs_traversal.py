@@ -50,7 +50,7 @@ class Graph:
         visited = set()
 
         # Call the recursive helper function to print DFS traversal
-        self.dfs_util(v, visited)
+        self.dfs_util(v, visited)   # this could also have been called as: self.dfs_util(v, set())
 
 
 # Driver code

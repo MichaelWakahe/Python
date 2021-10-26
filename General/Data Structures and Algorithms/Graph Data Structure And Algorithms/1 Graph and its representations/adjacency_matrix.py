@@ -9,18 +9,18 @@ https://ide.geeksforgeeks.org/9je5j6jJ13
 class Graph:
     def __init__(self, numvertex):
         self.adjMatrix = [[-1] * numvertex for x in range(numvertex)]
-        #print(f"self.adjMatrix is {self.adjMatrix}")
+        # print(f"self.adjMatrix is {self.adjMatrix}")
         self.numvertex = numvertex
         self.vertices = {}
         self.verticeslist = [0] * numvertex
-        #print(f"self.verticeslist is {self.verticeslist}")
+        # print(f"self.verticeslist is {self.verticeslist}")
 
     def set_vertex(self, vtx, id):
         if 0 <= vtx <= self.numvertex:
             self.vertices[id] = vtx
             self.verticeslist[vtx] = id
-            #print(f"self.vertices is {self.vertices}")
-            #print(f"self.verticeslist is {self.verticeslist}")
+            print(f"self.vertices is {self.vertices}")
+            print(f"self.verticeslist is {self.verticeslist}")
 
     def set_edge(self, frm, to, cost=0):
         frm = self.vertices[frm]
@@ -59,6 +59,7 @@ if __name__ == '__main__':
     G.set_edge('b', 'e', 40)
     G.set_edge('e', 'd', 50)
     G.set_edge('f', 'e', 60)
+
     print("Vertices of Graph")
     print(G.get_vertex())
     print("Edges of Graph")
